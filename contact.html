@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seção de Contato</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url(assets/contacts.jpg);
+        background-size: cover;
+        background-color: #231942;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #contact-section {
+        width: 100%;
+        min-height: 100vh;
+        padding: 32px 0;
+        background-color: #23194288;
+        padding: 24px;
+      }
+      #contact-section h2 {
+        color: #fff;
+        font-size: 42px;
+        width: 100%;
+        text-align: center;
+        text-shadow: 0px 3px 5px rgba(94, 84, 142, 0.95);
+      }
+      #contact-section #contact-cards-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        max-width: 960px;
+        margin: 0 auto;
+        margin-top: 48px;
+      }
+      #contact-section #contact-cards-container .contact-card-item {
+        background-color: rgba(62, 45, 148, 0.9);
+        color: #fff;
+        text-align: center;
+        padding: 18px;
+        border: solid 2px #5a46bb;
+        -webkit-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.63);
+        -moz-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.63);
+        box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.63);
+        border-radius: 18px;
+        flex: 1;
+      }
+      #contact-section #contact-cards-container .contact-card-item h3 {
+        margin-bottom: 8px;
+      }
+      #contact-section #contact-cards-container .contact-card-item a {
+        color: #fff;
+        text-decoration: none;
+      }
+      #contact-section #other-contacts-section {
+        max-width: 960px;
+        margin: 0 auto;
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+      }
+
+      #contact-section #other-contacts-section #map-container {
+        background-image: url(/assets/map.png);
+        min-height: 550px;
+        flex-grow: 2;
+        border-radius: 24px;
+        -webkit-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.63);
+        -moz-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.63);
+        box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.63);
+        flex: 1;
+      }
+
+      #contact-section #other-contacts-section #form {
+        flex: 1;
+        background-color: #231942;
+        border-radius: 24px;
+        padding: 32px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      #contact-section #other-contacts-section #form h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+      }
+      #contact-section #other-contacts-section #form .container-field {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 16px;
+      }
+      #contact-section #other-contacts-section #form .container-field label {
+        color: #fff;
+        margin-bottom: 8px;
+      }
+
+      #contact-section #other-contacts-section #form .container-field input, /** adicione a virgula e o seletor abaixo */
+      #contact-section #other-contacts-section #form .container-field textarea {
+        border: solid 1px #5d499c;
+        background-color: #5e548e;
+        font-size: 18px;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 4px;
+        color: #fff;
+        outline-style: solid;
+        outline-width: 1px;
+        outline-color: #5d499c;
+      }
+
+      #contact-section #other-contacts-section #form input:hover,
+      #contact-section #other-contacts-section #form input:active,
+      #contact-section #other-contacts-section #form input:focus {
+        border: solid 1px #9f86c0;
+      }
+      #contact-section #other-contacts-section #form input:active + label,
+      #contact-section #other-contacts-section #form input:focus + label {
+        color: #9b7bf1;
+      }
+      #contact-section #other-contacts-section #form button {
+        background-color: #5d499c;
+        padding: 16px;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 8px;
+        border: none;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contact-section">
+      <h2>Contato</h2>
+      <div id="contact-cards-container">
+        <div class="contact-card-item">
+          <img src="./assets/building.png" alt="Ícone escritório" />
+          <h3>Nosso Escritório</h3>
+          <p>Av das Nações Unidas, 13499</p>
+          <p>Brooklyn, São Paulo</p>
+        </div>
+
+        <div class="contact-card-item">
+          <img src="./assets/phones.png" alt="Ícone escritório" />
+          <h3>Telefones</h3>
+          <p>+55 (11) 3739-3333</p>
+          <p>+55 (21) 4483-5337</p>
+        </div>
+
+        <div class="contact-card-item">
+          <img src="./assets/faq.png" alt="Ícone escritório" />
+          <h3>FAQ</h3>
+          <a href="#faq">clique aqui</a>
+        </div>
+        <div class="contact-card-item">
+          <img src="./assets/mail.png" alt="Ícone escritório" />
+          <h3>Email</h3>
+          <a href="mailto:contato@nossaempresa.com.br"
+            >contato@nossaempresa.com.br</a
+          >
+          <a href="mailto:comercial@nossaempresa.com.br"
+            >comercial@nossaempresa.com.br</a
+          >
+        </div>
+      </div>
+      <div id="other-contacts-section">
+        <div id="map-container"></div>
+
+        <div id="form">
+          <form>
+            <h2>Entre em contato</h2>
+            <div class="container-field">
+              <input type="text" name="full-name" id="full-name" />
+              <label for="full-name">Nome </label>
+            </div>
+
+            <div class="container-field">
+              <input type="email" name="email" id="email" />
+              <label for="full-name">Email</label>
+            </div>
+
+            <div class="container-field">
+              <textarea name="message" id="message" rows="4"></textarea>
+              <label for="message">Mensagem</label>
+            </div>
+            <button type="submit">enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

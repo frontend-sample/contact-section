@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="contact-section">
+      <h2>Contato</h2>
+
+      <div id="contact-cards-container">
+        <div class="contact-card-item">
+          <img src="./assets/building.png" alt="Ícone escritório" />
+          <h3>Nosso Escritório</h3>
+          <p>Av das Nações Unidas, 13499</p>
+          <p>Brooklyn, São Paulo</p>
+        </div>
+
+        <div class="contact-card-item">
+          <img src="./assets/phones.png" alt="Ícone escritório" />
+          <h3>Telefones</h3>
+          <p>+55 (11) 3739-3333</p>
+          <p>+55 (21) 4483-5337</p>
+        </div>
+
+        <div class="contact-card-item">
+          <img src="./assets/faq.png" alt="Ícone escritório" />
+          <h3>FAQ</h3>
+          <a href="#faq">clique aqui</a>
+        </div>
+        <div class="contact-card-item">
+          <img src="./assets/mail.png" alt="Ícone escritório" />
+          <h3>Email</h3>
+          <a href="mailto:contato@nossaempresa.com.br"
+            >contato@nossaempresa.com.br</a
+          >
+          <a href="mailto:comercial@nossaempresa.com.br"
+            >comercial@nossaempresa.com.br</a
+          >
+        </div>
+      </div>
+
+      <div id="other-contacts-section">
+        <div id="map-container"></div>
+        <div id="form">
+          <form>
+            <h2>Entre em contato</h2>
+            <div class="container-field">
+              <input type="text" name="full-name" id="full-name" />
+              <label for="full-name">Nome </label>
+            </div>
+
+            <div class="container-field">
+              <input type="email" name="email" id="email" />
+              <label for="full-name">Email</label>
+            </div>
+
+            <div class="container-field">
+              <textarea name="message" id="message" rows="4"></textarea>
+              <label for="message">Mensagem</label>
+            </div>
+            <button type="submit">enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

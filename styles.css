@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(assets/contacts.jpg);
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #8b7bbc;
+}
+
+#contact-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 32px 0;
+  background-color: #23194288;
+  padding: 24px;
+}
+
+#contact-section h2 {
+  color: #fff;
+  font-size: 42px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0px 3px 5px rgba(94, 84, 142, 0.95);
+}
+
+#contact-section #contact-cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+#contact-section #contact-cards-container .contact-card-item {
+  background-color: rgba(62, 45, 148, 0.9);
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+  border: solid 2px #5a46bb;
+  -webkit-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.63);
+  box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.63);
+  border-radius: 18px;
+  flex: 1;
+}
+
+#contact-section #contact-cards-container .contact-card-item h3 {
+  margin-bottom: 8px;
+}
+#contact-section #contact-cards-container .contact-card-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#contact-section #other-contacts-section {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+}
+
+#contact-section #other-contacts-section #map-container {
+  background-image: url(/assets/map.png);
+  min-height: 550px;
+  flex-grow: 2;
+  border-radius: 24px;
+  -webkit-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.63);
+  box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.63);
+  flex: 1;
+}
+
+#contact-section #other-contacts-section #form {
+  flex: 1;
+  background-color: #231942;
+  padding: 32px;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+#contact-section #other-contacts-section #form h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+#contact-section #other-contacts-section #form .container-field {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 16px;
+}
+
+#contact-section #other-contacts-section #form .container-field label {
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+#contact-section #other-contacts-section #form .container-field input,
+#contact-section #other-contacts-section #form .container-field textarea {
+  border: solid 1px #5d499c;
+  background-color: #5e548e;
+  font-size: 18px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: #fff;
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: #5d499c;
+}
+
+#contact-section #other-contacts-section #form button {
+  background-color: #5d499c;
+  padding: 16px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  float: right;
+}
+
+#contact-section #other-contacts-section #form input:focus + label,
+#contact-section #other-contacts-section #form textarea:focus + label {
+  color: #9b7bf1;
+}
+
+#contact-section #other-contacts-section #form input:hover,
+#contact-section #other-contacts-section #form input:active,
+#contact-section #other-contacts-section #form input:focus,
+#contact-section #other-contacts-section #form textarea:hover,
+#contact-section #other-contacts-section #form textarea:active,
+#contact-section #other-contacts-section #form textarea:focus {
+  border: solid 1px #9f86c0;
+}
+
+#contact-section #other-contacts-section #form button:hover {
+  background-color: #443a75;
+}
